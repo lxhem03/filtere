@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Filterbot
+    branch: master
+    plan: free
+    dockerfilePath: ./Dockerfile
+    repo: https://github.com/lxhem03/filter
+    env: docker
+    envVars:
+      - key: BOT_TOKEN
+    autoDeploy: false
