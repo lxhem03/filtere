@@ -7,6 +7,6 @@ services:
     repo: https://github.com/lxhem03/filter
     env: docker
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.9
+      - key: PORT
+        value: 8080
     autoDeploy: false
