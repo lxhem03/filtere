@@ -7,5 +7,6 @@ services:
     repo: https://github.com/lxhem03/filter
     env: docker
     envVars:
-      - key: BOT_TOKEN
+      - key: PYTHON_VERSION
+        value: 3.9
     autoDeploy: false
