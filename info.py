@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "8204691365:AAHoxhUrcSrBa75aJmPLZxJS4-oGw7-
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://files.catbox.moe/i8qsec.jpeg https://files.catbox.moe/q2lhzr.jpeg https://files.catbox.moe/z09sth.jpeg https://files.catbox.moe/ir1wxh.jpeg https://files.catbox.moe/5wx10a.jpeg https://files.catbox.moe/wfp5t4.jpeg https://files.catbox.moe/983gyu.jpeg https://files.catbox.moe/83kdcv.jpeg https://files.catbox.moe/uhv8s5.webp https://files.catbox.moe/2fbp1d.webp https://files.catbox.moe/pponhx.jpg https://files.catbox.moe/yzx835.jpg https://files.catbox.moe/2yztvd.jpg https://files.catbox.moe/lllex3.jpg')).split()
 
 
 # Admins & Users
@@ -196,6 +196,7 @@ else:
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
 
 
 
