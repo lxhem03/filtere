@@ -1,22 +1,19 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.12-slim
 
-# Update and upgrade packages
-RUN apt-get update && apt-get upgrade -y
-
-# Install git (if needed for your dependencies or deployment)
-RUN apt-get install -y git
-
-# Create a working directory
+# Set working directory
 WORKDIR /app
 
-# Copy requirements file
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip and install Python dependencies
 COPY requirements.txt .
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
-# Upgrade pip and install dependencies
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of your application code
+# Copy application code
 COPY . .
 
 # Command to run the bot
