@@ -21,8 +21,6 @@ hachoir
 python-decouple 
 ffmpeg
 youtube_search
-pymongo[srv]==3.12.3 
-motor==2.5.1 
 marshmallow==3.14.1 
 umongo==3.0.1 
 PyLeaves==1.0.2
@@ -39,3 +37,5 @@ dnspython==2.3.0
 ffmpeg-python>=0.2.0
 openai==0.25.0
 git+https://github.com/Joelkb/cinemagoer
+motor==3.5.1
+pymongo[srv]==4.8.0  
